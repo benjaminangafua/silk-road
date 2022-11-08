@@ -70,13 +70,11 @@
                 <div class="nav-icon">
                     <div class="grd-ls">
                         <div>VIEW</div>
-                        <div>
-                            <a href="/property-list"> <i class="fas fa-bars"></i>LIST</a>
-                        </div>
-                        <div>
-
-                            <a href="/property-grid"><i class="fas fa-th"></i>GRID</a>
-                        </div>
+                        
+                        <div><router-link to="/property-list"><i class="fas fa-bars"></i>LIST</router-link></div>
+                            <div>
+                              <router-link to="/property-grid"> <i class="fas fa-th"></i>GRID </router-link>
+                            </div>
                     </div>
                     <div class="srch-filter">
                         <div class="srt">Sort by</div>

@@ -4,19 +4,19 @@
             <div class="nav">
                 <div class="top-nav">
                     <div class="home">
-                        <div><a href="/">Home</a> </div>
-                        <div><a href="/property-list">Our Property</a> </div>
+                        <div><router-link to="/">Home</router-link> </div>
+                        <div><router-link to="/property-list">Our Property</router-link> </div>
                     </div>
                     <div class="auth">
-                        <div class="aut1"><a href="/login">Login</a></div>
+                        <div class="aut1"><router-link to="/login">Login</router-link></div>
                         <hr class="aut-m">
-                        <div class="aut1"><a href="/register">Register</a></div>
+                        <div class="aut1"><router-link to="/register">Register</router-link></div>
                     </div>
                 </div>
                 <!-- <i class="fa-facebook-f" -->
                 <hr class="divider">
                 <div class="bottom-nav">
-                    <div><a href="/home-widget"> Widget</a></div>
+                    <div><router-link to="/home-widget"> Widget</router-link></div>
 
                     <div class="prty-btn"><button>Post a Property</button></div>
                 </div>

@@ -6,7 +6,7 @@
                     <h4>Don't have an account?</h4>
                     <p>If you don't have an account you can create one now to get the view of all the available properties in stock.
                     </p>
-                    <button><a href="/register">Register</a> </button>
+                    <button><router-link to="/register">Register</router-link> </button>
                 </div>
                 <div></div>
             </div>
