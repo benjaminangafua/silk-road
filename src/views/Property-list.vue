@@ -71,9 +71,9 @@
                     <div class="grd-ls">
                         <div>VIEW</div>
                         
-                        <div><router-link to="/property-list"><i class="fas fa-bars"></i>LIST</router-link></div>
+                        <div><router-link to="/property-list"><i class="fas fa-bars"></i></router-link></div>
                             <div>
-                              <router-link to="/property-grid"> <i class="fas fa-th"></i>GRID </router-link>
+                              <router-link to="/property-grid"> <i class="fas fa-th"></i> </router-link>
                             </div>
                     </div>
                     <div class="srch-filter">
@@ -297,9 +297,11 @@
    
 <script>
 import Footer from '../components/Footer.vue'
-export default {name: "Property-list",components: {Footer}}
-
-  /*  let range = document.querySelector("input[type=range]")
+export default {
+    name: "Property-list",
+    components: {Footer},
+    mounted(){
+        let range = document.querySelector("input[type=range]")
     let val = document.getElementById("val")
     // let value_less = document.getElementById("val-less")
     val.innerHTML = range.value
@@ -312,5 +314,15 @@ export default {name: "Property-list",components: {Footer}}
         let hr = `${(absolute_value * 100)/10000}%`
         bg_color = `linear-gradient(90deg, rgb(32, 178, 170) ${hr},  rgba(32, 178, 171, 0.342) ${hr})`;
         range.style.background = bg_color;
-    }) */
+    }) 
+
+    let recaptchaScript = document.createElement('script')
+      recaptchaScript.setAttribute('src', 'https://www.google.com/recaptcha/api.js')
+      document.head.appendChild(recaptchaScript)
+    }
+
+
+}
+
+  /*  */
 </script>

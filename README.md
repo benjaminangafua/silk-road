@@ -54,3 +54,23 @@ npm run dev
 ```sh
 npm run build
 ```
+
+> Hint:  in index.js
+```js
+  const history = createWebHistory(import.meta.env.BASE_URL)
+```
+> 1. Not correct {process.env.BASE_URL}
+>2. Correct {import.meta.env.BASE_URL}
+
+# Vercel
+
+**Setup**
+
+1. Create an account with [vercel](vercel.com)
+
+2. Import your GitHub Repo (Make sure you don't have me50 account activated)
+
+3. Create a file called `vercel.json` and dump this content in it
+```json 
+{"rewrites": [{ "source": "/:path*", "destination": "/index.html" }]}
+```

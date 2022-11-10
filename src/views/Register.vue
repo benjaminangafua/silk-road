@@ -44,11 +44,15 @@
 
 </template>
 <script>
-    export default {name: "Register"}
-    // let check = document.querySelector(".agree-term input")
+    export default {
+        name: "Register",
+        mounted(){
+            let check = document.querySelector(".agree-term input")
 
-    // check.addEventListener("click", () => {
-    //     check.style.color = (check.checked) ? "#20B2AA" : "red"
-    // })
+            check.addEventListener("click", () => {
+                check.style.color = (check.checked) ? "#20B2AA" : "red"
+            })
+        }
+}
 
 </script>

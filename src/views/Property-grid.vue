@@ -70,9 +70,9 @@
                     <div class="nav-icon">
                         <div class="grd-ls">
                             <div>VIEW</div>
-                            <div><router-link to="/property-list"><i class="fas fa-bars"></i>LIST</router-link></div>
+                            <div><router-link to="/property-list"><i class="fas fa-bars"></i></router-link></div>
                             <div>
-                              <router-link to="/property-grid"> <i class="fas fa-th"></i>GRID </router-link>
+                              <router-link to="/property-grid"> <i class="fas fa-th"></i> </router-link>
                             </div>
                         </div>
                         <div class="srch-filter">
@@ -251,19 +251,28 @@
         </template>
     <script>
         import Footer from '../components/Footer.vue'
-        export default {name: "PropertyGrid", components: {Footer}}
-        // let range = document.querySelector("input[type=range]")
-        // let val = document.getElementById("val")
-        // let value_less = document.getElementById("val-less")
-        // val.innerHTML = range.value
+        export default {
+            name: "PropertyGrid",
+            components: {
+                Footer
+            },
+            mounted(){
+                let range = document.querySelector("input[type=range]")
+                let val = document.getElementById("val")
+                val.innerHTML = range.value
 
-        // range.addEventListener("input", () => {
-        //     val.innerHTML = Number(range.value) //0 | 10000 -  decrease
-        //         // value_less.innerHTML =  0 + Number(range.value) //increases
-        //     let absolute_value = Number(range.value)
+                range.addEventListener("input", () => {
+                    val.innerHTML = Number(range.value) //0 | 10000 -  decrease
+                    // value_less.innerHTML =  0 + Number(range.value) //increases
+                    // let value_less = document.getElementById("val-less")
+                    let absolute_value = Number(range.value)
 
-        //     let hr = `${(absolute_value * 100)/10000}%`
-        //     bg_color = `linear-gradient(90deg, rgb(32, 178, 170) ${hr},  rgba(32, 178, 171, 0.342) ${hr})`;
-        //     range.style.background = bg_color;
-        // })
+                    let hr = `${(absolute_value * 100)/10000}%`
+                    bg_color = `linear-gradient(90deg, rgb(32, 178, 170) ${hr},  rgba(32, 178, 171, 0.342) ${hr})`;
+                    range.style.background = bg_color;
+                })
+
+                }
+    
+    }
     </script>
