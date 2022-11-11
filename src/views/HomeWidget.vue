@@ -62,3 +62,20 @@
 <script>
     export default {name: "Homewidget"}
 </script>
+
+<style scoped>
+.container{
+    height: 100vh;
+}
+.main-widget{
+  margin: 3.78% 20%;
+}
+.bottom-content{
+    margin-top:0;
+    padding-bottom: 1rem;
+}
+@media (max-width: 768px)
+{.main-widget {
+  margin: 10% 5%;
+}}
+</style>

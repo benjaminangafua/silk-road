@@ -42,3 +42,12 @@
 <script> 
 export default { name : 'Login'}
 </script>
+
+<style scoped>
+.container{
+    height: 100vh;
+}
+.main,.bottom-content{
+    margin-top:6.2%;
+}
+</style>
