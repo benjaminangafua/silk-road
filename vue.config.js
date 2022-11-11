@@ -1,1 +1,1 @@
-module.exports = {  publicPath: import.meta.env.NODE_ENV === "production" ? "/silkroad-vue/SILKROAD/" : "/",};
+module.exports = {  publicPath: import.meta.env.NODE_ENV === "production" ? "/silkroad-vue/" : "/",};
