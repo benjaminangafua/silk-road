@@ -268,7 +268,7 @@
                     let absolute_value = Number(range.value)
 
                     let hr = `${(absolute_value * 100)/10000}%`
-                    bg_color = `linear-gradient(90deg, rgb(32, 178, 170) ${hr},  rgba(32, 178, 171, 0.342) ${hr})`;
+                    const bg_color = `linear-gradient(90deg, rgb(32, 178, 170) ${hr},  rgba(32, 178, 171, 0.342) ${hr})`;
                     range.style.background = bg_color;
                 })
 
